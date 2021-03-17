@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Api Form</title>
+        
+        <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2162da8111.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+    
+
+<main id="main-container">
+<div id="card-container"> 
+              <div id="illustration" class="card-panel">
+                <div id="illustration-woman-container">
+                  <img id="illustration-woman" src="./img/3.jpg" alt="">
+                </div>
+              </div>
+        
+<section  id="faq" class="card-panel">
+
+<h1 id="title">Covid-19</h1>
+<div id="faq-container">
+    <!-- Search buttons -->
+
+<div class="questions-container">
+    <input type="text" class="input" id="text">
+    <button class="questions " id="fetch_statistics" type="submit">
+    
+  Search
+</button> 
+</div>
+
+<!-- Cases overview -->
+
+<div class="overview">
+    
+ <div class="title2"> <h1>Cases overview </h1></div>
+ <div > <p id="country"></p>
+ </div>
+    <dl class="user-data-list">
+    <div class="user-data-item">
+        <dt class="data-term">Total cases</dt>
+        <dd class="data-value h" id="cases_total"></dd>
+        <p class="data-value p" id="cases_new"></p>
+    </div>
+     <div class="user-data-item">
+        <dt class="data-term">Recovered</dt>
+        <dd class="data-value h" id="recovered" ></dd> 
+        <p class="data-value p" id="none" ></p> 
+    </div>
+    <div class="user-data-item">
+        <dt class="data-term">Deaths</dt>
+        <dd class="data-value h" id="deaths_total" ></dd> 
+        <p class="data-value p" id="deaths_new" ></p> 
+    </div>
+    <div class="user-data-item">
+        <dt class="data-term I">Tests</dt>
+        <dd class="data-value h" id="tests_total" ></dd> 
+        <p class="data-value p" id="none" ></p> 
+    </div>
+</dl>
+<div  class="title1"><img class="img" src="img/world.png" alt="" >
+     <h1> Worldwide</h1>
+</div>
+<dl class="user-data-list2">
+    <div class="user-data-item">
+        <dt class="data-term">Total cases</dt>
+        <dd class="data-value h" id="Worldwide_cases_total"></dd> 
+    </div>
+   <div class="user-data-item">
+        <dt class="data-term">Recovered</dt>
+        <dd class="data-value h" id="World_recovered" ></dd> 
+    </div>
+    <div class="user-data-item">
+        <dt class="data-term">Deaths</dt>
+        <dd class="data-value h" id="Worldwide_deaths_total" ></dd> 
+   </div>
+</dl>
+<button class="button" id="fetch_statistics" type="submit">
+    <img src="img" alt="">
+    <a href="#">More locations and statistics</a> </button>
+</div>
+
+
+</div>
+</section>
+</div>
+</main>
+        <script src="js/index.js"type="module"></script>
+    </body>
+</html>
+
+
+
+
+
+
+    <!-- <dd class="data-value" id="continent" ></dd>
+     <dd class="data-value" id="country" ></dd>
+     <dd class="data-value" id="population">  </dd>
+     <dd class="data-value" id="day" ></dd>
+     <dd class="data-value" id="time" ></dd> --><!-- <button id="statistics" type="submit"> -->
+<!-- <dl class="user-data-list2">
+<div class="user-data-item">
+    <dt class="data-term">Deaths</dt>
+     <dd class="data-value" id="1M_popD" ></dd>
+     <dd class="data-value" id="newD" ></dd> 
+     <dd class="data-value" id="totalD" ></dd>
+    </div>
+    <div class="user-data-item">
+    <dt class="data-term">Tests</dt>
+     <dd class="data-value" id="1M_popT" ></dd>
+     <dd class="data-value" id="totalT" ></dd> 
+    </div>
+</dl> -->

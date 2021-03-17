@@ -1,0 +1,350 @@
+saudi arabia 
+
+response[192]
+
+continent: "Asia"
+country: "Saudi-Arabia"
+population: 4311878
+day: "2021-02-27"
+time: "2021-02-27T23:00:08+00:00"
+
+cases{
+1M_pop: "10722"
+active: 2562
+new: "+338"
+critical: 475
+recovered: 368011
+total: 377061
+}
+deaths:{
+1M_pop: "184"
+new: "+5"
+total: 6488
+}
+
+tests:
+1M_pop: "386545"
+total: 13594146
+
+---------------------
+Kuwait 
+
+[112]
+
+continent: "Asia"
+country: "Kuwait"
+population: 4311878
+day: "2021-02-27"
+time: "2021-02-27T23:30:07+00:00"
+
+cases:
+1M_pop: "44039"
+active: 10615
+critical: 158
+new: "+844"
+recovered: 178197
+total: 189890
+
+deaths:
+1M_pop: "250"
+new: "+6"
+total: 1078
+
+tests:
+1M_pop: "412367"
+total: 1778076
+
+
+Bahrain
+Egypt
+Yemen
+
+
+       // console.log('statistics_Loooop_Started',response)
+        let Statistics_Lopp = response.response
+            console.log("Yes it's Working" ,Statistics_Lopp)
+        for( const one of Statistics_Lopp){  // loop in  [0..233]
+        console.log(" loop" , one)  
+        //   for(const two of one.continent){
+        //         console.log('haha',two)
+        //     }
+                let text =document.getElementById('text')
+                const country = one.country
+        //    if( text.value = country){
+        //        console.log('same')
+        //        document.getElementById("day").innerHTML = ` ${one.country}`;
+        //    }
+            if(one.continent == "Asia"){
+               const AsiaLoop = one.continent == 'Asia' // true
+          
+               console.log('lola sosa', AsiaLoop)
+                 for (const two of one){
+                     console.log('two',two)
+                 }
+                //  if(text.value=== AsiaLoop){
+                //     console.log("Okayy")
+                //     document.getElementById("day").innerHTML = ` ${AsiaLoop.day}`;
+
+                //  }
+           }
+            
+        }
+
+        _________________________________
+
+
+            <form >
+    <button id="sent" type="submit"> <a href="#">Saudi Arabia</a> </button>
+    </form>
+    <div class="textBox">
+        <strong>Saudi Arabia</strong>
+        <div id="Saudi_continent"></div>
+        <div id="Saudi_country"></div>
+        <div id="Saudi_population"> </div>
+        <div id="Saudi_day"></div>
+        <div id="Saudi_time"></div>
+
+        <strong>Cases</strong>
+        <div id="Cases_1M_pop"></div>
+        <div id="Cases_active"></div>
+        <div id="Cases_critical"></div>
+        <div id="Cases_new"></div>
+        <div id="Cases_recovered"></div>
+        <div id="Cases_total"></div>
+
+        <strong>Deaths</strong>
+        <div id="deathe_1M_pop"></div>
+        <div id="deathe_new"></div>
+        <div id="deathe_total"></div>
+
+        <strong>Tests</strong>
+        <div id="Tests_1M_pop"></div>
+        <div id="Tests_total"></div>
+ </div>
+ 
+  <br> hr <br>
+
+  <form >
+    <button id="sent_kwuait" type="submit"> <a href="#">Kwuait</a> </button>
+    </form>
+    <div class="textBox">
+        <strong>Kwuait</strong>
+        <div id="Kuwait_continent"></div>
+        <div id="Kuwait_country"></div>
+        <div id="Kuwait_population"> </div>
+        <div id="Kuwait_day"></div>
+        <div id="Kuwait_time"></div>
+    
+        <strong>Cases</strong>
+        <div id="K_Cases_1M_pop"></div>
+        <div id="K_Cases_active"></div>
+        <div id="K_Cases_critical"></div>
+        <div id="K_Cases_new"></div>
+        <div id="K_Cases_recovered"></div>
+        <div id="K_Cases_total"></div>
+    
+        <strong>Deaths</strong>
+        <div id="K_deathe_1M_pop"></div>
+        <div id="K_deathe_new"></div>
+        <div id="K_deathe_total"></div>
+    
+        <strong>Tests</strong>
+        <div id="K_Tests_1M_pop"></div>
+        <div id="K_Tests_total"></div>
+ </div>
+
+ <form >
+    <button id="yemen_sent" type="submit"> <a href="#">Yemen</a> </button>
+    </form>
+    <div class="textBox">
+        <strong>Yemen </strong>
+        <div id="Yemen_continent"></div>
+        <div id="Yemen_country"></div>
+        <div id="Yemen_population"> </div>
+        <div id="Yemen_day"></div>
+        <div id="Yemen_time"></div>
+
+        <strong>Cases</strong>
+        <div id="Y_Cases_1M_pop"></div>
+        <div id="Y_Cases_active"></div>
+        <div id="Y_Cases_critical"></div>
+        <div id="Y_Cases_new"></div>
+        <div id="Y_Cases_recovered"></div>
+        <div id="Y_Cases_total"></div>
+
+        <strong>Deaths</strong>
+        <div id="Y_deathe_1M_pop"></div>
+        <div id="Y_deathe_new"></div>
+        <div id="Y_deathe_total"></div>
+
+        <strong>Tests</strong>
+        <div id="Y_Tests_1M_pop"></div>
+        <div id="Y_Tests_total"></div>
+ </div>
+
+ <br>
+ <form >
+    <button id="Egypt_sent" type="submit"> <a href="#">Egypt</a> </button>
+    </form>
+    <div class="textBox">
+        <strong>Egypt </strong>
+        <div id="Egypt_continent"></div>
+        <div id="Egypt_country"></div>
+        <div id="Egypt_population"> </div>
+        <div id="Egypt_day"></div>
+        <div id="Egypt_time"></div>
+
+        <strong>Cases</strong>
+        <div id="E_Cases_1M_pop"></div>
+        <div id="E_Cases_active"></div>
+        <div id="E_Cases_critical"></div>
+        <div id="E_Cases_new"></div>
+        <div id="E_Cases_recovered"></div>
+        <div id="E_Cases_total"></div>
+
+        <strong>Deaths</strong>
+        <div id="E_deathe_1M_pop"></div>
+        <div id="E_deathe_new"></div>
+        <div id="E_deathe_total"></div>
+
+        <strong>Tests</strong>
+        <div id="E_Tests_1M_pop"></div>
+        <div id="E_Tests_total"></div>
+ </div>
+
+
+ <form >
+    <input type="text" id="Bahrain_submit">
+    <button id="Bahrain_sent" type="submit"> <a href="#">Bahrain</a> </button>
+    
+    </form>
+    <div class="textBox">
+        <strong>Bahrain </strong>
+        <div id="Bahrain_continent"></div>
+        <div id="Bahrain_country"></div>
+        <div id="Bahrain_population"> </div>
+        <div id="Bahrain_day"></div>
+        <div id="Bahrain_time"></div>
+
+        <strong>Cases</strong>
+        <div id="B_Cases_1M_pop"></div>
+        <div id="B_Cases_active"></div>
+        <div id="B_Cases_critical"></div>
+        <div id="B_Cases_new"></div>
+        <div id="B_Cases_recovered"></div>
+        <div id="B_Cases_total"></div>
+
+        <strong>Deaths</strong>
+        <div id="B_deathe_1M_pop"></div>
+        <div id="B_deathe_new"></div>
+        <div id="B_deathe_total"></div>
+
+        <strong>Tests</strong>
+        <div id="B_Tests_1M_pop"></div>
+        <div id="B_Tests_total"></div>
+ </div>
+
+
+ 
+ <form >
+    <button id="Qatar_sent" type="submit"> <a href="#">Qatar</a> </button>
+    </form>
+    <div class="textBox">
+        <strong>Qatar </strong>
+        <div id="Qatar_continent"></div>
+        <div id="Qatar_country"></div>
+        <div id="Qatar_population"> </div>
+        <div id="Qatar_day"></div>
+        <div id="Qatar_time"></div>
+
+        <strong>Cases</strong>
+        <div id="Q_Cases_1M_pop"></div>
+        <div id="Q_Cases_active"></div>
+        <div id="Q_Cases_critical"></div>
+        <div id="Q_Cases_new"></div>
+        <div id="Q_Cases_recovered"></div>
+        <div id="Q_Cases_total"></div>
+
+        <strong>Deaths</strong>
+        <div id="Q_deathe_1M_pop"></div>
+        <div id="Q_deathe_new"></div>
+        <div id="Q_deathe_total"></div>
+
+        <strong>Tests</strong>
+        <div id="Q_Tests_1M_pop"></div>
+        <div id="Q_Tests_total"></div>
+ </div>
+
+ 
+const base_url = 'http://api.meaningcloud.com/deepcategorization-1.0'
+const api_key= '5f4418ce679ee7c44279425b38d99076' 
+
+
+const input = document.querySelector('#generate')
+
+input.addEventListener('click', (e)=>{
+    e.preventDefault()
+    fetch("https://covid-19-data.p.rapidapi.com/totals", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "55f21114f5mshb14fba71a57d3fbp19016ejsn707c9f97e9fa",
+            "x-rapidapi-host": "covid-19-data.p.rapidapi.com"
+        }
+    })
+    .then(response => response.json())
+    .then(function(response){
+console.log(" totals", response);
+
+
+// document.getElementById("agreement").innerHTML = ` ${response[0].confirmed}`;
+// document.getElementById("subjectivity").innerHTML = ` ${response[0].critical}`;
+// document.getElementById("confidence").innerHTML = ` ${response[0].deaths}`;
+// document.getElementById("changes").innerHTML = ` ${response[0].lastChange}`;
+// document.getElementById("updated").innerHTML = ` ${response[0].lastUpdate}`;
+})
+    .catch(err => {
+        console.error(err);
+    });
+})
+
+
+const fuck = document.querySelector('#fuck')
+
+fuck.addEventListener('click', (e)=>{
+    e.preventDefault()
+    fetch("https://covid-193.p.rapidapi.com/countries", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "55f21114f5mshb14fba71a57d3fbp19016ejsn707c9f97e9fa",
+		"x-rapidapi-host": "covid-193.p.rapidapi.com"
+	}
+})
+    .then(response => response.json())
+    .then(function(response){
+console.log(" countries", response);
+
+        })
+    .catch(err => {
+        console.error(err);
+    });
+})
+
+const statistics =document.querySelector('#statistics')
+statistics.addEventListener('click',(e)=>{
+        e.preventDefault()
+        fetch("https://covid-193.p.rapidapi.com/statistics", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "55f21114f5mshb14fba71a57d3fbp19016ejsn707c9f97e9fa",
+            "x-rapidapi-host": "covid-193.p.rapidapi.com"
+        }
+        })
+        .then(response => response.json()) 
+        .then(response => {
+            console.log('statistics',response)
+        }) .catch(err => {
+            console.error(err);
+            });
+           
+       
+})
